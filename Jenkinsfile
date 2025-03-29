@@ -6,7 +6,6 @@ pipeline {
     stages{
         stage("Cloning Git Repository"){
             steps{
-                cleanWs()
                 bat "git clone https://github.com/KURO-1125/Devops-Evaluation.git"
             }
         }
