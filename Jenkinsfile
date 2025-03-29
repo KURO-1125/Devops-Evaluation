@@ -6,6 +6,7 @@ pipeline {
     stages{
         stage("Cloning Git Repository"){
             steps{
+                clearWs()
                 bat "git clone https://github.com/KURO-1125/Devops-Evaluation.git"
             }
         }
@@ -26,7 +27,7 @@ pipeline {
         }
         stage("Deploying Application"){
             steps{
-                bat "npm run"
+                bat "npm start"
             }
         }
     }
