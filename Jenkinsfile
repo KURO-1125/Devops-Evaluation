@@ -1,11 +1,8 @@
 pipeline {
     agent any
-    plugins{
+    tools {
         nodejs 'NodeJS'
     }
-    // tools {
-    //     nodejs 'NodeJS'
-    // }
     stages{
         stage("Cloning Git Repository"){
             steps{
